@@ -1,0 +1,7 @@
+패키지 만들기 :
+
+ npm create vite@latest .
+   6 npm install
+   7 npm install @types/three
+   8 npm install three
+   9 npm run dev
