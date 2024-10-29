@@ -1,0 +1,11 @@
+Model Information:
+* title:	Man Running
+* source:	https://sketchfab.com/3d-models/man-running-c6cb68f4b06f4da48b11be30c2a9b7bf
+* author:	mtamim (https://sketchfab.com/mtamim)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Man Running" (https://sketchfab.com/3d-models/man-running-c6cb68f4b06f4da48b11be30c2a9b7bf) by mtamim (https://sketchfab.com/mtamim) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
