@@ -1,5 +1,6 @@
 import './style.css';
 import * as THREE from 'three';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
 class App3 {
   private scene: THREE.Scene;
@@ -38,11 +39,15 @@ class App3 {
   }
 
   private createCar() {
-    const geometry = new THREE.BoxGeometry(0.5, 0.2, 1);
-    const material = new THREE.MeshBasicMaterial({ color: 0xff0000 });
-    this.car = new THREE.Mesh(geometry, material);
-    this.car.position.set(0, 0.1, 0); // 카의 초기 위치 설정
-    this.scene.add(this.car);
+    const loader = new GLTFLoader(); // GLTF 로더 인스턴스 생성
+    loader.load('models/scene.gltf', (gltf) => {
+      this.car = gltf.scene as THREE.Mesh; // GLTF 모델을 Mesh로 설정
+      this.car.position.set(0, 0.1, 0); // 모델의 초기 위치 설정
+      this.car.scale.set(0.5, 0.5, 0.5); // 모델 스케일 조정 (필요 시)
+      this.scene.add(this.car);
+    }, undefined, (error) => {
+      console.error(error); // 로딩 오류 처리
+    });
   }
 
   private setupControls() {
